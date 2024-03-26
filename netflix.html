@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>netflix</title>
+    </head>
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            background-image: url("net.jpeg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .netflix h1{
+            color: red;
+        }
+       form{
+        border:1px ;
+        width:18%;
+        height: 50vh;
+        margin:100px 600px;
+        color: white;
+        background-color:rgba(0, 0, 0, 0.8);
+        padding: 10px;
+        
+       }
+       form:hover{
+        width: 20%;
+        height: 60vh;
+        transition: ease-in-out 0.5s;
+       }
+       form:not(:hover){
+        transition: ease-in 0.5s;
+       }
+       form p{
+        font-size: 11px;
+        display:inline;
+        margin:10px 30px;
+        color: rgba(255, 255, 255, 0.522);
+
+       }
+       form h1{
+        opacity: 0;
+       }
+       form h1:hover{
+        opacity: 0.5;
+       }
+       input[type="text"],input[type="password"]{
+        margin: 10px 15px;
+        width: 80%;
+        height: 25px;
+        background-color: #333;
+        font-size: 10px;
+        color: white;
+       }
+       input[type="submit"]{
+        margin: 10px 15px;
+        width: 80%;
+        height: 30px;
+        background-color: red;
+        color: white;
+        font-size: 10px;
+       }
+       input[type="checkbox"]{
+        background-color:  rgba(255, 255, 255, 0.522);
+       }
+    </style>
+    <body>
+       <div class="netflix">
+        <h1>NETFLIX</h1>
+       </div>
+       <form method="post" action="money.html">
+        <h3 style="color:white;">SIGN IN</h3>
+        <input type="text" placeholder="Email or phone number" required><br>
+        <input type="password" placeholder="password" required>
+        <input type="submit" value="Sign IN"><br><br>
+        <p><input type="checkbox">remember me</p><p>Need help?</p>
+       
+     </form>
+    </body>
+</html>
